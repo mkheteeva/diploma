@@ -1,0 +1,607 @@
+* --------------------------------- */
+/* CSS RESET	  					*/
+body{margin:0; border:0; padding:0;}
+
+/* --------------------------------- */
+/* STANDARD TAG  					*/
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif; 
+	font-size:12px;
+}
+
+/* --------------------------------- */
+/*CONTAINER		  					*/
+#container{ 
+	margin:0 auto;
+	margin-top:40px;
+	width:260px;
+}
+
+/* --------------------------------- */
+/*MESSAGE BOX CLEAN	serie	  		 */
+	.clean-gray{
+		border:solid 1px #DEDEDE; 
+		background:#EFEFEF;
+		color:#222222;
+		padding:4px;
+		text-align:center;
+	}
+	.clean-yellow{
+		border:solid 1px #DEDEDE; 
+		background:#FFFFCC;
+		color:#222222;
+		padding:4px;
+		text-align:center;
+	}
+	.clean-ok{
+		border:solid 1px #349534; 
+		background:#C9FFCA;
+		color:#008000;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+	.clean-error{
+		border:solid 1px #CC0000; 
+		background:#F7CBCA;
+		color:#CC0000;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+
+/* --------------------------------- */
+/*MESSAGE BOX Iconized	  		 */
+	.icon-gray{
+		border:solid 1px #DEDEDE; 
+		background:#EFEFEF;
+		color:#222222;
+		padding:4px;
+		text-align:center;
+	}
+	.icon-yellow{
+		border:solid 1px #DEDEDE; 
+		background:#FFFFCC url(img/icon-yellow.png) 8px 6px no-repeat;
+		color:#222222;
+		padding:4px;
+		text-align:center;
+	}
+	.icon-ok{
+		border:solid 1px #90ac13; 
+		background:#eef4d3 url(img/icon-green.png) 8px 6px no-repeat;
+		color:#6b800d;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+	.icon-error{
+		border:solid 1px #CC0000; 
+		background:#F7CBCA url(img/icon-red.png) 8px 6px no-repeat;
+		color:#CC0000;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+	
+/* --------------------------------- */
+/*MESSAGE BOX SOLID	serie	  		 */
+
+	.solid-gray{
+		background:#444444;
+		color:#FFFFFF;
+		padding:4px;
+		text-align:center;
+	}
+	.solid-yellow{
+		background:#FFFFCC;
+		color:#222222;
+		padding:4px;
+		text-align:center;
+	}
+	.solid-ok{
+		background:#008000;
+		color:#FFFFFF;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+	.solid-error{
+		background:#CC0000;
+		color:#FFFFFF;
+		font-weight:bold;
+		padding:4px;
+		text-align:center;
+	}
+	
+/* --------------------------------- */
+/* ROUNDED ALTERNATE	  		 	*/
+
+	/* ---------------------------------------------------------------------- */
+	.round-a-gray{
+		background:#444444 url(img/round_gray-left.png) left top no-repeat;
+		color:#FFFFFF;
+		text-align:center;
+	}
+		.round-a-gray div{
+			background:url(img/round_gray-right.png) right bottom no-repeat;
+			padding:4px;
+		}
+	/* ---------------------------------------------------------------------- */
+	.round-a-ok{
+		background:#008000 url(img/round_green-left.png) left top no-repeat;
+		color:#FFFFFF;
+		text-align:center;
+	}
+		.round-a-ok div{
+			background:url(img/round_green-right.png) right bottom no-repeat;
+			padding:4px;
+		}
+	/* ---------------------------------------------------------------------- */
+	.round-a-error{
+		background:#CC0000 url(img/round_red-left.png) left top no-repeat;
+		color:#FFFFFF;
+		text-align:center;
+	}
+		.round-a-error div{
+			background:url(img/round_red-right.png) right bottom no-repeat;
+			padding:4px;
+		}
+		
+/* --------------------------------- */
+/* TOOLTIPS				  		 	*/
+
+	/* ---------------------------------------------------------------------- */
+	.tooltips-gray{
+		background:#444444;
+		color:#FFFFFF;
+		text-align:center;
+		padding-top:4px;
+	}
+		.tooltips-gray div{
+			background:url(img/tips_gray.png) left bottom no-repeat;
+			padding-top:4px;
+			height:18px;
+		}
+	/* ---------------------------------------------------------------------- */
+	.tooltips-ok{
+		background:#008000;
+		color:#FFFFFF;
+		text-align:center;
+		padding-top:4px;
+	}
+		.tooltips-ok div{
+			background:url(img/tips_green.png) left bottom no-repeat;
+			padding-top:4px;
+			height:18px;
+		}
+	/* ---------------------------------------------------------------------- */
+	.tooltips-error{
+		background:#CC0000;
+		color:#FFFFFF;
+		text-align:center;
+		padding-top:4px;
+	}
+		.tooltips-error div{
+			background:url(img/tips_red.png) left bottom no-repeat;
+			margin-top:4px;
+			height:18px;
+		}
+.hh {
+margin-left: 200px;
+padding:15px 30px 30px 30px;
+border: thin solid #6A92D4;
+height: 140px;
+margin-right: 50px;
+border-radius: 30px;
+cursor: pointer;
+color: black;
+background-color: white;
+font-size:18px;
+}
+
+
+.hh:hover{
+opacity:0.5;
+}
+
+.hh name {
+	font-weight: bold;
+}
+.hh h3{
+	float:right;
+	font-size: 10px;
+	color: black;
+	padding-left: 15px;
+}
+
+
+.cont {
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-bottom: 80px;		
+}
+figure {
+  float: left;
+  width: 15%;
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;;
+  text-indent: 0;
+  margin: 0.5em;
+  padding: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 45px;
+}
+
+figure:hover {
+border: thin solid #6A92D4;
+}
+
+hg {
+	
+	position: relative;
+	right: 2%;
+	margin-top:-5%;
+	width: 100px;
+	height: 100px;
+	color: blue;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 20px;
+	border-color: blue;
+	
+	
+	
+}
+.tb
+{
+    display: block;
+    width: 100%;
+}
+
+.td
+{
+    display: table-cell;
+    
+}
+
+input, button
+{
+    color: #fff;
+    font-family: Nunito;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+#cover
+{
+    position: relative;
+    top: 17%;
+    left: 10%;
+    right: 0;
+    width: 1000px;
+	height: 83px;
+    padding: 15px;
+    margin: 53px auto 0 auto;
+    background-color: #6A92D4;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px #6A92D4, 0 0 0 20px #ffffffeb;
+    transform: scale(0.6);
+	border-radius: 10px;
+}
+
+form
+{
+    height: 50px;
+}
+
+input[type="text"]
+{
+	position: relative;
+	top: -35px;
+    width: 800px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 1;
+	margin: 0;
+}
+
+input[type="text"]::placeholder
+{
+    color: #fff;
+	opacity: .5;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+button
+{
+    position: relative;
+	top: -30px;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: 4px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #fff;
+    background-color: transparent;
+    border-radius: 40px;
+    transition: 0.5s ease all;
+}
+
+button span
+{
+    position: absolute;
+    top: 70px;
+    left: 33px;
+    display: block;
+    width: 35px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: 3px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 55%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+#s-cover:hover button span:before, #s-cover:hover button span:after
+{
+    right: -6px;
+    width: 40px;
+    background-color: #fff;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 10px 10px 10px 150px;
+    padding: 3px;
+    color: #000;
+}
+.github a:hover {background: #191919; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+.footer {
+	color: #1049A9;
+border-top:3px solid #9EC1D4;
+padding-top: 15px;
+margin-top: 30px;
+}
+.topnav {
+    background-color: #6A92D4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+	color: #fff;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+}
+ 
+.topnav logot {
+	float: left;
+}
+
+
+.topnav logotwo {
+	float: right;
+}
+
+.topnav search {
+	float: right;
+}
+
+.topnav life {
+	float : right;
+	font-family: Monotype Corsiva;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+	font-size: 25px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white ;
+    color: #6A92D4;
+}
+
+.but {
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+  letter-spacing: 6px;
+  border: 2px solid #6A92D4;
+  font-size: 15px;
+  color: #6A92D4;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.but:hover {
+  color: #fff;
+  background-color: #6A92D4;
+}
+.but span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6A92D4;
+  transition: 0.5s;
+  z-index: -1;
+}
+.but span:nth-child(1) {
+  top: -100%;
+  left: -100%;
+}
+.but:hover span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+.but span:nth-child(2) {
+  bottom: -100%;
+  left: -100%;
+}
+.but:hover span:nth-child(2) {
+  bottom: 0;
+  left: 0;
+}
+.but span:nth-child(3) {
+  top: -100%;
+  right: -100%;
+}
+.but:hover span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+.but span:nth-child(4) {
+  bottom: -100%;
+  right: -100%;
+}
+.but:hover span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+close {
+  position: relative;
+  right: 70%;
+  top: 32px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.5;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: relative;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.arrow-3 {
+    color: #337AB7;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px; 
+    display: inline-block; 
+    margin: 10px;
+	margin-left: 210px;
+	float: left;
+}
+.arrow-3 .arrow-3-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+.arrow-3 .arrow-3-iconcircle {
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+.arrow-3:hover .arrow-3-icon {
+    transform: translate3d(5px, 0, 0);
+}
+.arrow-3:hover .arrow-3-iconcircle {
+    stroke-dashoffset: 0;
+}
+.arrow3-top 
+{     
+transform: rotate(-180deg); 
+}
