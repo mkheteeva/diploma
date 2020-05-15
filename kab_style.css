@@ -1,0 +1,131 @@
+.topnav {
+    background-color: #6A92D4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+	color: #fff;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.topnav logot {
+	float: left;
+}
+
+
+.topnav logotwo {
+	float: right;
+}
+
+.topnav search {
+	float: right;
+}
+
+.topnav logout{
+	float: right;
+	font-size:15px;
+}
+.topnav life {
+	float : right;
+	font-family: Monotype Corsiva;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+	font-size: 25px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #1049A9;
+    color: white;
+}
+
+.block_hi {
+	background-image: url(fon.gif);
+	height: 540px; 
+}
+
+
+gg {
+	font-family: book antiqua;
+	font-size: 300%;
+	color: white;
+	font-weight : bold;
+	float: center;
+	margin: 30%;
+	margin-top: 50%;
+	
+}
+
+gg1 {
+	font-family: book antiqua;
+	font-size: 200%;
+	color: black;
+	font-weight : bold;
+	float: center;
+	margin-top: 100px;
+	margin-left: 500px;
+	
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 10px 10px 10px 150px;
+    padding: 3px;
+    color: #000;
+}
+.github a:hover {background: #191919; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+.footer {
+	color: #1049A9;
+border-top:3px solid #9EC1D4;
+padding-top: 15px;
+
+
+}
+.fot {
+	padding-bottom: 35px;
+}
+
+.midnav {
+	background-color: white;
+	overflow: hidden;
+}
+
+.midnav img {
+	border: 1px solid #6A92D4; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+	margin-right: 50px;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+    width: 150px; /* Set a small width */
+	height: 200px;
+	float: left;
+}
+
+.midnav img:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
