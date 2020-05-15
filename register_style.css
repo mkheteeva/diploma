@@ -1,0 +1,322 @@
+gg {
+	font-family: Arial Black;
+	font-size: 300%;
+	color: #6A92D4;
+	font-weight : bold;
+	
+}
+
+hh {
+	padding: 30px;
+}
+
+fat {
+	font-weight: bold;
+}
+
+fat1 {
+	font-weight: bold;
+	padding-top:100px;
+}
+.topnav {
+    background-color: #6A92D4;
+    overflow: hidden;
+}
+
+.fot {
+	padding-bottom: 35px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+	color: #fff;
+    text-align: center;
+    padding: 20px 20px 5px 20px;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+}
+ 
+.topnav logot {
+	float: left;
+}
+
+.topnav logot:hover {
+	background-color: #6A92D4;
+}
+
+.topnav life {
+	float : center;
+	font-family: Monotype Corsiva;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #6A92D4;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #1049A9;
+    color: white;
+}
+
+.form-wrap {
+  width: 1100px;
+  background: white;
+  border-radius: 20px;
+}
+.form-wrap *{transition: .1s linear}
+.profile {
+  width: 240px;
+  float: center;
+  text-align: center;
+  padding: 30px;
+}
+form {
+  background: white;
+  float: center;
+  width: calc(100% - 500px);
+  padding: 30px;
+  border-radius: 0 20px 20px 0;
+ 
+}
+.form-wrap:after, form div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label, span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+  border-width: 0;
+  outline: none;
+  margin: 0;
+  width: 100%;
+  padding: 10px 15px;
+  background: #e6e6e6;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus  {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  width: 50%;
+  float: left;
+  line-height: 40px;
+}
+.radio input {
+  position: absolute;  
+  opacity: 0;
+}
+.radio-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background: #e6e6e6;
+  border-radius: 50%;
+  text-align: center;
+}
+.male:before {
+  content: "\f222";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.female:before {
+  content: "\f221";
+  font-family: FontAwesome;
+  font-weight: bold;
+}
+.radio label:hover input ~ .radio-control,
+.radiol input:focus ~ .radio-control {
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);
+}
+.radio input:checked ~ .radio-control {
+  color: red;
+}
+select {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  background: #e6e6e6;
+  color: #7b7b7b;
+  -webkit-appearance: none; /*убираем галочку в webkit-браузерах*/
+  -moz-appearance: none; /*убираем галочку в Mozilla Firefox*/
+}
+select::-ms-expand {
+  display: none; /*убираем галочку в IE*/
+}
+.select-arrow {
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none; /*активизируем показ списка при нажатии на стрелку*/
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #7b7b7b transparent transparent transparent;
+}
+button {
+  padding: 10px 0;
+  border-width: 0;
+  display: block;
+  width: 120px;
+  margin: 25px auto 0;
+  background: #60e6c5;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  text-transform: uppercase;
+}
+
+/********************** добавляем форме адаптивность **********************/
+@media (max-width: 600px) {
+  .form-wrap {margin: 20px auto; max-width: 550px; width:100%;}
+  .profile, form {float: none; width: 100%;}
+  h1 {margin-top: auto; padding-bottom: 50px;}
+  form {border-radius: 0 0 20px 20px;}
+}
+
+
+
+input [type =submit] {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: white;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  transition: .3s;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+input [type=submit]:hover {
+  background: #6A92D4;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 10px 10px 10px 150px;
+    padding: 3px;
+    color: #000;
+}
+.github a:hover {background: #191919; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+.footer {
+	color: #1049A9;
+border-top:3px solid #9EC1D4;
+padding-top: 15px;
+
+
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  font-weight: 50;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #6A92D4;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.leftcol { /* Левая колонка */
+  float: left; /* Обтекание справа */
+  width: 250px; /* Ширина колонки */
+ 
+}
+.rightcol { /* Правая колонка */
+  float: right;
+  width: 200px;
+}

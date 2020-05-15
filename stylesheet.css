@@ -1,0 +1,367 @@
+
+
+body {
+	background-color: #6A92D4;
+}
+
+gg {
+	font-family: cursive;
+	font-size: 200%;
+	color: black;
+	font-weight : bold;
+	
+}
+
+ggg {
+	font-family: cursive;
+	font-size: 250%;
+	color: black;
+	font-weight : bold;
+	padding: 0 14px;
+	
+}
+
+hh {
+	font-size: 135%;
+	color: black;
+	font-weight: bold;
+	padding: 10px 10px;
+	
+	
+}
+
+h3{
+	font-size: 135%;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0px;
+	
+}
+
+hg {
+	font-size: 120%;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 15px 0;
+	font-family: trebuchet ms;
+	
+}
+.im{
+            margin-top: 0px;
+			text-align: center;
+			
+			
+        }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #6A92D4;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+}
+ 
+.topnav logot {
+	float: left;
+}
+
+.topnav logot:hover {
+	background-color: #6A92D4;
+}
+
+.topnav life {
+	float : center;
+	font-family: Monotype Corsiva;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #6A92D4;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #1049A9;
+    color: white;
+}
+
+@charset "UTF-8";
+.animated {
+ -webkit-animation-duration: 1s;
+ -moz-animation-duration: 1s;
+ -o-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-fill-mode: both;
+ -moz-animation-fill-mode: both;
+ -o-animation-fill-mode: both;
+ animation-fill-mode: both;
+}
+
+.animated.hinges {
+ -webkit-animation-duration: 2s;
+ -moz-animation-duration: 2s;
+ -o-animation-duration: 2s;
+ animation-duration: 2s;
+}
+
+.animated.slow {
+ -webkit-animation-duration: 3s;
+ -moz-animation-duration: 3s;
+ -o-animation-duration: 3s;
+ animation-duration: 3s;
+}
+
+.animated.snail {
+ -webkit-animation-duration: 4s;
+ -moz-animation-duration: 4s;
+ -o-animation-duration: 4s;
+ animation-duration: 4s;
+}
+
+@-webkit-keyframes shake {
+ 0%, 100% {-webkit-transform: translateX(0);}
+ 10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+ 20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+ 0%, 100% {-moz-transform: translateX(0);}
+ 10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+ 20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+ 0%, 100% {-o-transform: translateX(0);}
+ 10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+ 20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+ 0%, 100% {transform: translateX(0);}
+ 10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+ 20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.shake {
+ -webkit-animation-name: shake;
+ -moz-animation-name: shake;
+ -o-animation-name: shake;
+ animation-name: shake;
+}
+
+.login .modal-dialog{
+ width: 350px;
+}
+.login .modal-footer{
+ border-top: 0;
+ margin-top: 0px;
+ padding: 10px 20px 20px;
+}
+.login .modal-header {
+ border: 0 none;
+ padding: 15px 15px 15px;
+/* padding: 11px 15px; */
+}
+.login .modal-body{
+/* background-color: #eeeeee; */
+}
+.login .division {
+ float: none;
+ margin: 0 auto 18px;
+ overflow: hidden;
+ position: relative;
+ text-align: center;
+ width: 100%;
+}
+.login .division .line {
+ border-top: 1px solid #DFDFDF;
+ position: absolute;
+ top: 10px;
+ width: 34%;
+}
+.login .division .line.l {
+ left: 0;
+}
+.login .division .line.r {
+ right: 0;
+}
+.login .division span {
+ color: #424242;
+ font-size: 17px;
+}
+.login .box .social {
+ float: none;
+ margin: 0 auto 30px;
+ text-align: center;
+}
+
+
+.login .forgot {
+ color: #797979;
+ margin-left: 0;
+ overflow: hidden;
+ text-align: center;
+ width: 100%;
+}
+.login .btn-login, .registerBox .btn-register{
+ background-color: #00BBFF;
+ border-color: #00BBFF;
+ border-width: 0;
+ color: #FFFFFF;
+ display: block;
+ margin: 0 auto;
+ padding: 15px 50px;
+ text-transform: uppercase;
+ width: 100%;
+}
+.login .btn-login:hover, .registerBox .btn-register:hover{
+ background-color: #00A4E4;
+ color: #fff;
+}
+.login .form-control{
+ border-radius: 3px;
+ background-color: rgba(0, 0, 0, 0.09);
+ box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+ color: #FFFFFF;
+}
+.login .form-control:hover{
+ background-color: rgba(0,0,0,.16);
+}
+.login .form-control:focus{
+ box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+ background-color: rgba(0,0,0,0.23);
+ color: #FFFFFF;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+ border-radius: 3px;
+ border: none;
+ color: #333333;
+ font-size: 16px;
+ height: 46px;
+ margin-bottom: 5px;
+ padding: 13px 12px;
+ width: 100%;
+}
+
+
+@media (max-width:400px){
+ .login .modal-dialog{
+ width: 100%;
+ }
+}
+
+
+.text_hi {
+	color: #;
+	padding: 0px 90px 10px;
+	text-align: justify;
+	font-family: trebuchet ms;
+}
+
+.rightfoto{
+ float:right;
+ margin: 90px 10px 2px 90px; 
+}
+
+a.bott{
+display: block;
+font-size: 1.1em;
+width:80px;
+text-decoration:none;
+text-align:center;
+font: bold 14px arial;
+text-transform: uppercase;
+padding: 10px 10px;
+margin: 20px auto;
+color: #ccc;
+background-color: #6A92D4;
+border: none;
+border-radius: 6px;
+text-shadow: 0px -1px 0px #000;
+box-shadow: 0px 1px 0px #666,0px 5px 0px #444,0px 6px 6px rgba(0, 0, 0, .6);
+-webkit-transition: ease .15s all;
+-moz-transition: ease .15s all;
+-o-transition: ease .15s all;
+transition: ease .15s all;
+-webkit-animation: none;
+ -moz-animation: none;
+ -o-animation: none;
+  animation: none;
+}
+a.bott:hover, a.bott:focus{
+-webkit-animation: linear 1.2s light infinite;
+-moz-animation: linear 1.2s light infinite;
+-o-animation: linear 1.2s light infinite;
+animation: linear 1.2s light infinite;
+}
+@-webkit-keyframes light{
+0%   { color: #ddd; text-shadow: 0px -1px 0px #000; }
+50%   { color: #fff; text-shadow: 0px -1px 0px #444, 0px 0px 5px #ffd, 0px 0px 8px #fff; }
+100% { color: #ddd; text-shadow: 0px -1px 0px #000; }
+}
+@-moz-keyframes light{
+0%   { color: #ddd; text-shadow: 0px -1px 0px #000; }
+50%   { color: #fff; text-shadow: 0px -1px 0px #444, 0px 0px 5px #ffd, 0px 0px 8px #fff; }
+100% { color: #ddd; text-shadow: 0px -1px 0px #000; }
+}
+@-o-keyframes light{
+0%   { color: #ddd; text-shadow: 0px -1px 0px #000; }
+50%   { color: #fff; text-shadow: 0px -1px 0px #444, 0px 0px 5px #ffd, 0px 0px 8px #fff; }
+100% { color: #ddd; text-shadow: 0px -1px 0px #000; }
+}
+@keyframes light{
+0%   { color: #ddd; text-shadow: 0px -1px 0px #000; }
+50%   { color: #fff; text-shadow: 0px -1px 0px #444, 0px 0px 5px #ffd, 0px 0px 8px #fff; }
+100% { color: #ddd; text-shadow: 0px -1px 0px #000; }
+}
+a.bott:active{
+color: #fff;
+text-shadow: 0px -1px 0px #444,0px 0px 5px #ffd,0px 0px 8px #fff;
+box-shadow: 0px 1px 0px #666,0px 2px 0px #444,0px 2px 2px rgba(0, 0, 0, .9);
+-webkit-transform: translateY(3px);
+-moz-transform: translateY(3px);
+-o-transform: translateY(3px);
+transform: translateY(3px);
+-webkit-animation: none;
+-moz-animation: none;
+-o-animation: none;
+animation: none;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 10px 10px 10px 150px;
+    padding: 3px;
+    color: #000;
+}
+.github a:hover {background: #191919; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+.footer {
+	color: #1049A9;
+border-top:3px solid #9EC1D4;
+
+
+}
+
+
