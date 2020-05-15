@@ -1,0 +1,400 @@
+body {
+  overflow-x:hidden;
+  background:#fff;
+  font-family: 'Open Sans', sans-serif;
+}
+	* {box-sizing: border-box;}
+.color-border {
+  width: 70px;
+  margin: 20px auto 0;
+  padding: 4px;
+  color-border:#6A92D4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.color-border img {
+  width:70px;
+  height: 70px;
+  display: block;
+  border-radius: 10px;
+  margin-left: -120%;
+}
+
+.color-border img:hover{
+	border: thin solid #6A92D4;
+}
+.arrow-3 {
+    color: #337AB7;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    height: 18px;
+    line-height: 18px; 
+    display: inline-block; 
+    margin: 10px;
+	margin-left: 210px;
+	float: left;
+}
+.arrow-3 .arrow-3-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+.arrow-3 .arrow-3-iconcircle {
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+.arrow-3:hover .arrow-3-icon {
+    transform: translate3d(5px, 0, 0);
+}
+.arrow-3:hover .arrow-3-iconcircle {
+    stroke-dashoffset: 0;
+}
+.arrow3-top 
+{     
+transform: rotate(-180deg); 
+}
+
+.block {
+
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #6A92D4;
+  border-radius: 30px;
+  position: relative;
+  right: -40%;
+  padding: 15px 15px 15px 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  
+}
+.block:before {
+  position: absolute;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  content: '';
+  width: 0;
+  height: 0;
+  border:1px solid #6A92D4;
+  border-width: 0 20px 70px 20px;
+  border-color: transparent transparent #6A92D4 transparent;
+  right: -35px;
+  bottom: -43px;
+}
+.block:after {
+  position: absolute;
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 70px 20px;
+  border-color: transparent transparent white transparent;
+  right: -30px;
+  bottom: -39px;
+}
+
+.block2 {
+
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #6A92D4;
+  border-radius: 30px;
+  position: relative;
+  right: -23%;
+  padding: 15px 15px 15px 15px;
+  margin-top: 10px;
+  font-size: 15px;
+  
+}
+.block2:before {
+  position: absolute;
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+  content: '';
+  width: 0;
+  height: 0;
+  border:1px solid #6A92D4;
+  border-width: 0 20px 70px 20px;
+  border-color: transparent transparent #6A92D4 transparent;
+  right: 291px;
+  bottom: -43px;
+}
+.block2:after {
+  position: absolute;
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 70px 20px;
+  border-color: transparent transparent white transparent;
+  right: 286px;
+  bottom: -39px;
+}
+
+
+.hh {
+	width: 250px;
+}
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 43px;
+    height: 43px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin: 10px 10px 10px 150px;
+    padding: 3px;
+    color: #000;
+}
+.github a:hover {background: #191919; color: #fff;}
+.instagram a:hover {background: #3f729b; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+.footer {
+	position: fixed;
+	color: #1049A9;
+border-top:3px solid #9EC1D4;
+padding-top: 15px;
+margin-top: 50px;
+position:absolute;
+bottom:-100px;
+width: 100%;
+}
+.fot {
+	padding-bottom: 20px;
+}
+.topnav {
+    background-color: #6A92D4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+	color: #fff;
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+}
+ 
+.topnav logot {
+	float: left;
+}
+
+
+.topnav logotwo {
+	float: right;
+}
+
+.topnav search {
+	float: right;
+}
+
+.topnav life {
+	float : right;
+	font-family: Monotype Corsiva;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: black;
+	font-size: 25px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white ;
+    color: #6A92D4;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html,
+body {
+  width:100%;
+  height:100%;
+}
+
+.mail-btn {
+position:absolute;
+  bottom: 7%;
+  right: 15%;
+  display:inline-block;
+  padding:0.5rem 1rem;
+  border:2px solid rgba(255,255,255,0.5);
+  background:none;
+  background-color: #6A92D4;
+  outline:none;
+  -webkit-appearance: none;
+  font-size:2rem;
+  color:rgba(255,255,255,1);
+  text-decoration:none;
+	height: 60px;
+  letter-spacing:0.5rem;
+  text-indent:0.5rem;
+  cursor:pointer;
+  transition:
+    color 1.5s .5s,
+    border 3s 1s;
+   font-size: 20px;
+   border-radius: 10px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+  
+}
+.mail-btn:before,
+.mail-btn:after {
+  content:'';
+  position:absolute;
+  opacity:0;
+  backface-visibility:visible;
+  transform-style:preserve-3d;
+  perspective:400px;
+  transform-origin:50% -50%;
+  transform:rotateX(360deg) rotateY(0) translateX(-50%) translateY(0) scale(0.2);
+  transition:all 0.5s;
+}
+.mail-btn:before {
+  top:5px;
+  left:50%;
+  height:3rem;
+  background:white;
+  border-top:2rem solid #2980b9;
+  border-right:3rem solid transparent;
+  border-left:3rem solid transparent;
+}
+.mail-btn:after {
+  top:0;
+  left:50%;
+  border-top:2rem solid white;
+  border-right:3rem solid transparent;
+  border-left:3rem solid transparent;
+}
+.mail-btn:hover {
+  color:rgba(255,255,255,0);
+  border:2px solid rgba(255,255,255,0);
+  transition:
+    color .25s,
+    border .25s;
+}
+.mail-btn:hover:before,
+.mail-btn:hover:after {
+  opacity:1;
+  transform:rotateX(0) rotateY(-10deg) translateX(-50%) translateY(0) scale(1);
+}
+.fly {
+  color:rgba(255,255,255,0);
+  border:2px solid rgba(255,255,255,0);
+  animation:sended 4s 0.8s forwards;
+}
+@keyframes sended {
+  0% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:0;
+    transform:rotate(-45deg) translateX(300%) translateY(-500%);
+  }
+  5% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:1;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  78% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:1;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  79% {
+    height:2rem;
+    width:3.5rem;
+    border-top:0;
+    border-right:0;
+    border-bottom:10px solid white;
+    border-left:10px solid white;
+    opacity:0;
+    transform:rotate(-45deg) translateX(0) translateY(0);
+  }
+  80% {
+    height:auto;
+    width:auto;
+    color:rgba(255,255,255,0);
+    border:2px solid rgba(255,255,255,0);
+    opacity:0;
+    transform:rotate(0) translateX(0) translateY(0);
+  }
+  100% {
+    height:auto;
+    width:auto;
+    color:rgba(255,255,255,1);
+    border:2px solid rgba(255,255,255,0.5);
+    opacity:1;
+    transform:rotate(0) translateX(0) translateY(0);
+  }
+}
+.fly:before,
+.fly:after {animation:flyout .6s forwards;}
+@keyframes flyout {
+  0% {
+    opacity:1;
+    transform:rotateX(0) rotateZ(0) translateX(-50%) translateY(0) scale(1);
+  }
+  33% {
+    opacity:0.66;
+    transform:rotateX(0) rotateZ(-5deg) translateX(-100%) translateY(0) scale(1);
+  }
+  100% {
+    opacity:0;
+    transform:rotateX(0) rotateZ(0) translateX(1000%) translateY(0) scale(1);
+  }
+}
+
+sum {
+	width: 300px;
+	height: 70px;
+	border-radius: 10px;
+}
+textarea {
+	
+	width: 600px;
+	height: 85px;
+	border-radius: 10px;
+	position: absolute;
+	text-align: top;
+	right: 33%;
+	bottom: 5%;
+	font-size: 15px;
+	padding: 10px;
+}
+
+
