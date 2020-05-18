@@ -51,6 +51,12 @@ $convid = $_GET['convid'];//айди собеседника
    $link = mysqli_connect($host, $user, $password, $database) 
         or die("Ошибка " . mysqli_error($link)); 
      mysqli_set_charset($link, "utf8");
+	 
+	 $getimage = 'SELECT image FROM users WHERE id = "'.$convid.'"';
+	 $resultat=mysqli_query($link, $getimage) or die("Ошибка " . mysqli_error($link));
+	 $image = mysqli_fetch_array($resultat);
+	 
+	 
 	
 $getdialog = 'SELECT
         id,
@@ -115,38 +121,84 @@ $getdialog = 'SELECT
 	Назад
 </a>
 <div>
-  <div class="color-border">
-    <img src="joker.jpg">
-</div> 
-<div class="messages" id= "messages">
 <?php
+  echo'<div class="color-border">
+    <img src="data:image;base64, '.$image['image'].'">
+</div> 
+<div class="messages" id= "messages">';
 for ($k= 0; $k<$rows;++$k){
-if($sender[$k] == $uid){echo'<div class="block">'.$mess[$k].'</div>';}
+if($sender[$k] == $uid){
+	if(substr($mess[$k],0,14) == 'movie_card.php' ){echo'<a href="'.$mess[$k].'"><div class="block"> Фильм</div></a>';}else{
+	echo'<div class="block">'.$mess[$k].'</div>';}
+}
 else{
+	if(substr($mess[$k],0,14) == 'movie_card.php' ){echo'<a href="'.$mess[$k].'"><div class="block2"> Фильм</div></a>';} else{
 	echo'<div class="block2">'.$mess[$k].'</div>';
 	}
+}
 }
 ?>
 </div>
 </div>
-
 <div class= "dontroll">
 <a href="#openModal"><film> Прикрепить фильм </film></a>
 <div id="openModal" class="modal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title">Название</h3>
+        <div class="modal-title">
+		<div class="d1">
+  <form action="#openModal" method="post">
+  <input type="search" placeholder="Искать здесь..." name="searchvalue">
+  <button type="submit"></button>
+  </form>
+</div></div>
         <a href="#close" title="Close" class="close">×</a>
       </div>
-      <div class="modal-body">    
-        <p>Содержимое модального окна...</p>
+      <div class="modal-body">   
+<div class= "radchoice">	  
+        <form action="textmess_obr.php" method = "post">
+		
+		<?php
+		if(isset($_POST['searchvalue'])){
+			
+		$contentname = htmlspecialchars($_POST['searchvalue']);
+		$getcontent = 'SELECT id,Name, Year FROM content_ed WHERE Name LIKE "%'.$contentname.'%"';
+		$getres =mysqli_query($link, $getcontent) or die("Ошибка " . mysqli_error($link));
+		$num = mysqli_num_rows($res);
+		for($l=0; $l < $num;++$l){
+			$film = mysqli_fetch_array($getres);
+			$idis[] = $film['id'];
+			$name[] = $film['Name'];
+			$year[] = $film['Year']; 
+		}
+		$_POST['searchvalue'] = NULL;
+		}else{
+			$getfilms = 'SELECT id,Name,Year FROM content_ed';
+			$pol=mysqli_query($link, $getfilms) or die("Ошибка " . mysqli_error($link));
+			$num = mysqli_num_rows($pol);
+	 
+		for($l=0; $l < $num; ++$l){
+		 
+		 $film = mysqli_fetch_array($pol);
+		 $idis[] = $film['id'];
+		 $name[] = $film['Name'];
+		 $year[] = $film['Year']; 
+	 }
+		}
+		for($j=0; $j < $num; ++$j){
+		echo'<pk><p><input type="radio" name="mymessage" required value="movie_card.php?filmid='.$idis[$j].'"><pk>'.$name[$j].'('.$year[$j].')</pk></input></p></pk>';
+		}
+		?>
+		</div>
+		<input type="submit" value = "Прикрепить"> </input>
+		</form>
       </div>
     </div>
   </div>
 </div>
-<form action="textmess_obr.php" method="post">
-<textarea placeholder = "Введите сообщение" name="mymessage"></textarea>
+<?php echo'<form action="textmess_obr.php?convid='.$convid.'" method="post">';?>
+<textarea placeholder = "Введите сообщение" required name="mymessage"></textarea>
 <button class="mail-btn" type="submit">Отправить</button>
 <form>
 </div>
